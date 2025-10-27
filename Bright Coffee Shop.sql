@@ -1,3 +1,42 @@
+-- Check my categorical columns (values)
+SELECT
+distinct store_location 
+FROM
+  "MUANO"."ANALYSIS1"."COFFEESHOP"; 
+
+SELECT distinct PRODUCT_CATEGORY
+FROM
+  "MUANO"."ANALYSIS1"."COFFEESHOP"; 
+
+SELECT distinct PRODUCT_TYPE
+FROM
+  "MUANO"."ANALYSIS1"."COFFEESHOP"; 
+
+----- WHEN did we open the shop 
+SELECT MIN (transaction_date) AS Shop_Opening_Date 
+FROM
+  "MUANO"."ANALYSIS1"."COFFEESHOP"; 
+
+--Time the shop opens 
+SELECT MIN(TRANSACTION_TIME) AS opening_hour
+FROM
+  "MUANO"."ANALYSIS1"."COFFEESHOP"; 
+
+---Time the shop closes 
+SELECT Max(TRANSACTION_TIME) AS closinng_hour
+FROM
+  "MUANO"."ANALYSIS1"."COFFEESHOP"; 
+
+--- last operating date 
+SELECT Max (transaction_date) AS last_operating_date  
+FROM
+  "MUANO"."ANALYSIS1"."COFFEESHOP"; 
+
+
+
+
+--Main code 
+
 SELECT TRANSACTION_DATE,
 DAYNAME(TRANSACTION_DATE) AS day_name,
 CASE 
