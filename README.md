@@ -1,15 +1,15 @@
-##Introduction 
+#Introduction 
 
 The purpose of Analysis is to provide our new CEO with business insights using Bright Coffee Shop’s Transactional Data to enable him/ her to make informed decisions that will grow the company's revenue and improve product performance.  
 
-###Tools 
+#Tools 
 
 Miro 
 Sknowflake 
 Excel 
 Powerpoint 
 
-##Approach 
+#Approach 
 
 Conducted planning on the Miro board by considering the data types/ columns on the data file 
 Data processing in Snowflake 
